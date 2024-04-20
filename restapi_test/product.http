@@ -1,0 +1,17 @@
+
+### PRODUCT::PointProducer::SIMPLE::/product/point/send::form
+POST http://localhost:8080/mq/product/point/send
+Content-Type: application/x-www-form-urlencoded
+
+msg = 简单测试
+
+### PRODUCT::FanoutProducer::SIMPLE::/product/fanout/send::form
+POST http://localhost:8080/mq/product/fanout/send
+Content-Type: application/x-www-form-urlencoded
+
+msg = 广播简单测试
+
+###
+### http-dynamic-variables.json:1
+### http-client-env.json
+###

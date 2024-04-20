@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mq
+  rabbitmq:
+    host: ${rabbitmq.host}
+    port: ${rabbitmq.port}
+    username: ${rabbitmq.username}
+    password: ${rabbitmq.password}
+    virtual-host: ${rabbitmq.vhost}
+
+server:
+  port: 8080
+  servlet:
+    context-path: /mq

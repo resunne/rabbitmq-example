@@ -6,6 +6,7 @@ import lombok.Getter;
 public enum PointMqEnum {
 
     SIMPLE("简易", "sun.exchange.point.simple", "simple", "sun.queue.point.simple"),
+    SIMPLE2("简易2", "sun.exchange.point.simple", "simple2", "sun.queue.point.simple2"),
     ;
 
     /**

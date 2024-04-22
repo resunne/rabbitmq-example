@@ -28,6 +28,11 @@ public class ProductController {
         pointProducer.send(PointMqEnum.SIMPLE.getExchange(), PointMqEnum.SIMPLE.getRoutingKey(), msg);
     }
 
+    @PostMapping("/point2/send")
+    public void sendPoint2(@RequestParam String msg) {
+        pointProducer.send(PointMqEnum.SIMPLE2.getExchange(), PointMqEnum.SIMPLE2.getRoutingKey(), msg);
+    }
+
     @PostMapping("/fanout/send")
     public void sendFanout(@RequestParam String msg) {
         fanoutProducer.send(FanoutMqConstant.EXCHANGE, msg);

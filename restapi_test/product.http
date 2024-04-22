@@ -11,6 +11,13 @@ Content-Type: application/x-www-form-urlencoded
 
 msg = 广播简单测试
 
+
+### PRODUCT::PointProducer::SIMPLE2::/product/point2/send::form
+POST http://localhost:8080/mq/product/point2/send
+Content-Type: application/x-www-form-urlencoded
+
+msg = 简单测试2
+
 ###
 ### http-dynamic-variables.json:1
 ### http-client-env.json
